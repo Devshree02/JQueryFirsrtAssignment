@@ -7,29 +7,47 @@
   <link rel="stylesheet" href="assests/css/custom.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- bootstrap links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
-<title>JavaScript</title>
-<body class="bg-img">
 
- <h1>Information form</h1>
+<title>Table Data- JQuery</title>
+<body>
+  <div class="form-back mt-5">
 
- <div id="mainId" class="mainClass">
-  <input type="text" id="name" placeholder="Enter your name">
+    <h1 class="text-uppercase p-3 h1-formate">Information form</h1>
+
+    <div id="mainId" class="mainClass container align-items-center">
+      <!-- <input type="text" id="name" placeholder="Enter your name"> -->
+      <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+       </div>
+
+<div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-primary m-5" data-toggle="button" aria-pressed="false" autocomplete="off" id = "addNewButton">
+        Add New
+      </button>
+      <button type="button" class="btn btn-primary m-5" data-toggle="button" aria-pressed="false" autocomplete="off" id = "submitButton">
+        Submit
+      </button>
+    </div>
+
+<div class="container">
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">S.No.</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+  </table>
 </div>
-
-<button id = "addNewButton">Add New</button>
-<button id = "submitButton">Submit</button>
-
-<!-- <p id = "pera" style="background-color:white;"></p> -->
-
-<table border="1" id="tab">
-  <tr>
-   <th>S.No.</th>
-   <th>Name</th>
- </tr>
-
-</table>
-
+</div>
 <script src="assests/javascript/custom.js"></script> 
 
 </body>

@@ -1,43 +1,24 @@
-.bg-img
+body
 {
-	background-size: cover;
-	background-repeat: no-repeat;
-	text-align: center;
+	background-image: url("file:///home/devshree/Desktop/jqueryFirst/assests/images/back.jpg");
+    background-size: cover;
 }
-form
-{
-	margin: auto;
+.form-back {
+	background-color: rgba(0,0,128,0.2);
 	width: 50%;
+	margin: auto;
 }
-h1
-{
-	color: black;
+.h1-formate {
+	color: var(--light);
 	text-align: center;
 	text-decoration: underline;
-	margin-top: 10px;
-} 
-input
-{
-	margin-top: 10px;
-	border-radius: 30px;
-	height:30px;
-	width: 500px;
-	padding-left: 10px;
-	
 }
-input::after
-{
-	content: "\A";
+
+table {
+	color: var(--light);
+	visibility: hidden;
 }
-table
-{
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: white;
-	/*display: none;*/
-}
-button
+.buttons
 {
 	margin-top: 30px;
 	margin-right: 30px;
